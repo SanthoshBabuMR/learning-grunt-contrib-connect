@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>simpleServer</title>
+		<!-- css begin -->
+		<!-- <link rel="stylesheet" href="/public/css/render.css" /> -->
+		<!-- css end -->
+	</head>
+	<body>
+
+		<div class="doc-wrap">
+		<!-- doc-wrap begin -->
+			
+			<h1>Server Status</h1>
+			<p>simpleServer started and running on port: <script> document.write( window.location.port ) </script></p>
+
+			<h2>Settings</h2>
+			<ul>
+				<li>protocol: <script> document.write( window.location.protocol.replace(/:$/,"") ) </script></li>
+				<li>hostname: <script> document.write( window.location.host.replace(/:(\d)+$/,"") ) </script></li>
+				<li>port: <script> document.write( window.location.port ) </script></li>
+				<li>base directory: views/serve/</li>
+			</ul>
+
+		<!-- doc-wrap end -->
+		</div>
+
+		<!-- script begin -->
+		<!-- <script src="/public/scripts/main.js"></script> -->
+		<!-- script end -->
+	</body>
+</html>
